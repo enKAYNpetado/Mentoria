@@ -33,6 +33,7 @@ body::before {
   top: 0;
   left: 0;
 }
+
 fieldset {
   border: none;
   display: flex;
@@ -60,14 +61,13 @@ fieldset legend {
   padding-bottom: 16px;
 }
 
-fieldset .sub-legend {
+#fieldset-b #sub-legend {
   color: #535971;
-  border-bottom: 1px solid #e6e6f0;
+
   border: none;
   font-size: 20px;
   font-weight: 400;
-  display: flex;
-  gap: 11px;
+
   font-family: "Staatliches", cursive;
 }
 
@@ -160,30 +160,27 @@ footer {
   background-color: rgba(83, 89, 113, 1);
   border-radius: 0px 0px 20px 20px;
   padding: 52px 71px;
-  
 }
 
 footer .button {
-width: 608px;
-height: 55.652px;
-padding: 15px 40px;
-text-align: center;
-gap: 10px;
-flex-shrink: 0;
-background: #FF5374;
-border-radius: 20px;
-border: none;
-font-family: "Staatliches", cursive;
-color: #FFF;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px;
-cursor: pointer;
+  width: 608px;
+  height: 55.652px;
+  padding: 15px 40px;
+  text-align: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #ff5374;
+  border-radius: 20px;
+  border: none;
+  font-family: "Staatliches", cursive;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  cursor: pointer;
 }
 
 input:invalid {
   border: 2px solid red;
 }
-
-

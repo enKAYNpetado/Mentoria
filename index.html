@@ -48,7 +48,12 @@
               <label for="User-password">
                 Senha <span>(mínimo de 6 caracteres)</span></label
               >
-              <input type="password" id="User-password" required minlength="6" />
+              <input
+                type="password"
+                id="User-password"
+                required
+                minlength="6"
+              />
             </div>
           </div>
         </fieldset>
@@ -64,24 +69,26 @@
           </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset id="fieldset-b">
           <div class="fieldset-wrapper">
             <legend>Seus horários disponíveis</legend>
-            <legend class="sub-legend">Primeira mentoria</legend>
-            <div class="col-3">
-              <div class="input-wrapper">
-                <label for="mentoring-data">
-                  Data <span>(DD/MM/AAAA)</span></label
-                >
-                <input type="date" id="mentoring-data" required />
-              </div>
-              <div class="input-wrapper">
-                <label for="mentoring-begin"> Das  </label>
-                <input type="time" id="mentoring-begin" required />
-              </div>
-              <div class="input-wrapper">
-                <label for="mentoring-end"> Até</label>
-                <input type="time" id="mentoring-end" required />
+            <div>
+              <legend id="sub-legend">Primeira mentoria</legend>
+              <div class="col-3">
+                <div class="input-wrapper">
+                  <label for="mentoring-data">
+                    Data <span>(DD/MM/AAAA)</span></label
+                  >
+                  <input type="date" id="mentoring-data" required />
+                </div>
+                <div class="input-wrapper">
+                  <label for="mentoring-begin"> Das </label>
+                  <input type="time" id="mentoring-begin" required />
+                </div>
+                <div class="input-wrapper">
+                  <label for="mentoring-end"> Até</label>
+                  <input type="time" id="mentoring-end" required />
+                </div>
               </div>
             </div>
           </div>
@@ -89,35 +96,31 @@
 
         <fieldset class="fieldset2">
           <div class="fieldset-wrapper">
-            <legend>Segunda mentoria</legend>
-            <div class="col-3">
-              <div class="input-wrapper">
-                <label for="mentoring-data">
-                  Data <span>(DD/MM/AAAA)</span></label
-                >
-                <input type="date" id="mentoring-data" required />
-              </div>
-              <div class="input-wrapper">
-                <label for="mentoring-begin"> Das </label>
-                <input type="time" id="mentoring-begin" required />
-              </div>
-              <div class="input-wrapper">
-                <label for="mentoring-end"> Até</label>
-                <input type="time" id="mentoring-end" required  />
+            <div>
+              <legend>Segunda mentoria</legend>
+              <div class="col-3">
+                <div class="input-wrapper">
+                  <label for="mentoring-data">
+                    Data <span>(DD/MM/AAAA)</span></label
+                  >
+                  <input type="date" id="mentoring-data" required />
+                </div>
+                <div class="input-wrapper">
+                  <label for="mentoring-begin"> Das </label>
+                  <input type="time" id="mentoring-begin" required />
+                </div>
+                <div class="input-wrapper">
+                  <label for="mentoring-end"> Até</label>
+                  <input type="time" id="mentoring-end" required />
+                </div>
               </div>
             </div>
           </div>
         </fieldset>
       </form>
-         <footer>
-          <input 
-          class="button"
-          type="submit"
-          form="my-form"
-          value="Salvar"
-          >
-         </footer>
-
+      <footer>
+        <input class="button" type="submit" form="my-form" value="Salvar" />
+      </footer>
     </div>
   </body>
 </html>
