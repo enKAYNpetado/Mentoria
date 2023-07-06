@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentoria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Dosis:wght@700&family=Inter:wght@400;700&family=JetBrains+Mono:wght@500;700&family=Mulish:wght@400;700&family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Mentoria</h1>
+        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+      </header>
+      <form id="my-form">
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Informações pessoais</legend>
+            <div class="col-2">
+              <div class="input-wrapper">
+                <label for="User-name">Nome </label>
+                <input type="text" id="User-name" required />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="User-surname">Sobrenome </label>
+                <input type="text" id="User-surname" required />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <div class="input-wrapper">
+              <label for="User-mail">
+                Email <span>(digite um email válido)</span></label
+              >
+              <input type="text" id="User-mail" required />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="User-password">
+                Senha <span>(mínimo de 6 caracteres)</span></label
+              >
+              <input type="password" id="User-password" required minlength="6" />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Informações do mentor</legend>
+            <div class="input-wrapper">
+              <label for="User-mentor">
+                Nome do seu mentor <span>(só o primeiro nome)</span></label
+              >
+              <input type="text" id="User-mentor" required />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Seus horários disponíveis</legend>
+            <legend class="sub-legend">Primeira mentoria</legend>
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="mentoring-data">
+                  Data <span>(DD/MM/AAAA)</span></label
+                >
+                <input type="date" id="mentoring-data" required />
+              </div>
+              <div class="input-wrapper">
+                <label for="mentoring-begin"> Das  </label>
+                <input type="time" id="mentoring-begin" required />
+              </div>
+              <div class="input-wrapper">
+                <label for="mentoring-end"> Até</label>
+                <input type="time" id="mentoring-end" required />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset2">
+          <div class="fieldset-wrapper">
+            <legend>Segunda mentoria</legend>
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="mentoring-data">
+                  Data <span>(DD/MM/AAAA)</span></label
+                >
+                <input type="date" id="mentoring-data" required />
+              </div>
+              <div class="input-wrapper">
+                <label for="mentoring-begin"> Das </label>
+                <input type="time" id="mentoring-begin" required />
+              </div>
+              <div class="input-wrapper">
+                <label for="mentoring-end"> Até</label>
+                <input type="time" id="mentoring-end" required  />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+         <footer>
+          <input 
+          class="button"
+          type="submit"
+          form="my-form"
+          value="Salvar"
+          >
+         </footer>
+
+    </div>
+  </body>
+</html>
